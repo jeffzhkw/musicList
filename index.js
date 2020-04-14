@@ -1,6 +1,6 @@
 musicLst = [
     {
-        "title": "Sometime Around Midnight (live)",
+        "title": "Sometime Around Midnight",
         "artist": "The Airborne Toxic Event",
         "album": "All I Ever Wanted: Live from Walt Disney Concert Hall",
         "coverSrc": "https://m.media-amazon.com/images/I/71fQXrN5nML._SS500_.jpg",
