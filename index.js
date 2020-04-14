@@ -44,7 +44,7 @@ musicLst = [
 function createMusic(aJSON){
     let musicElem = document.createElement("DIV");
     musicElem.classList.add("music");
-
+    
     let overlayElem = document.createElement("DIV");
     overlayElem.classList.add("overlay");
 
@@ -58,13 +58,20 @@ function createMusic(aJSON){
     let artistElem = document.createElement("H4");
     artistElem.appendChild(document.createTextNode(aJSON.artist));
 
+    let aElem = document.createElement("a");
+    aElem.href = aJSON.link;
+    aElem.setAttribute("target", "_blank")
+    
+    
+    aElem.appendChild(musicElem)
     musicElem.appendChild(overlayElem);
     overlayElem.appendChild(infoElem);
     infoElem.appendChild(titleElem);
     infoElem.appendChild(artistElem);
+    //infoElem.appendChild(aElem);
     musicElem.style.backgroundImage = "url("+aJSON.coverSrc+")";
 
-    document.getElementsByClassName("main")[0].appendChild(musicElem);
+    document.getElementsByClassName("main")[0].appendChild(aElem);
     console.log(musicElem)
 }
 

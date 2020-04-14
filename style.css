@@ -21,6 +21,12 @@ h1{
 h2{
     font-style: italic;
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    
+}
 
 #showOne{
     border: 2px solid black;
