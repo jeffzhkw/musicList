@@ -11,9 +11,50 @@ body, html{
 body{
     display: flex;
     flex-direction: column;
+    background-color: #F9F4E7;
 }
 
+h1{
+    font-size: 80pt;
+}
 
+h2{
+    font-style: italic;
+}
+
+#showOne{
+    border: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: sans-serif;
+}
+#showOne:hover{
+    border-right: 3px solid black;
+    border-bottom: 4px solid black;
+}
+#showOne:active{
+    border: 2px solid black;
+}
+    
+
+#showAll{
+    border: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+#showAll:hover{
+    border-right: 3px solid black;
+    border-bottom: 4px solid black;
+}
+#showAll:active{
+    border: 2px solid black;
+}
 .intro{
     display: flex;
     width: 100vw;

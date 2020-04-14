@@ -1,5 +1,4 @@
 musicLst = [
-
     {
         "title": "Sometime Around Midnight (live)",
         "artist": "The Airborne Toxic Event",
@@ -69,11 +68,46 @@ function createMusic(aJSON){
     console.log(musicElem)
 }
 
+var counter = 0;
+console.log(counter)
+
+const showOneButton = document.getElementById("showOne")
+const showAllButton = document.getElementById("showAll")
+
+showOneButton.addEventListener("click", function(){
+
+    if (counter < musicLst.length){
+        console.log("before", counter)
+        createMusic(musicLst[counter]);
+        
+        counter++;
+        console.log("after", counter)
+    }
+    else{
+        alert("that's all")
+    }
+
+
+    
+})
+
+showAllButton.addEventListener("click", function(){
+    createLst();
+})
 
 function createLst(){
     console.log("reached")
-    for (var i = 0; i < musicLst.length; i++){
-        createMusic(musicLst[i]);
+    
+
+    if (counter == musicLst.length){
+        alert("that's all")
     }
+    else{
+        for (var i = counter; i < musicLst.length; i++){
+            createMusic(musicLst[i]);
+        }
+        counter = musicLst.length;
+    }
+    
 }
 
