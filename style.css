@@ -15,7 +15,7 @@ body{
 }
 
 h1{
-    font-size: 80pt;
+    font-size: 100pt;
 }
 
 h2{
@@ -80,7 +80,6 @@ a:visited{
 }
 
 .music{
-    border: 1px solid black;
     background-image: url(https://m.media-amazon.com/images/I/71fQXrN5nML._SS500_.jpg);
     background-size: cover;
     background-position: center;
